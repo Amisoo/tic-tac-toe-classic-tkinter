@@ -32,7 +32,7 @@ class Morpion:
         
 
     def change_button_text(self, index: int) -> None:
-        if self.buttons[index]['text'] != "":
+        if self.buttons[index]['text'] != "": # if there is an error here you can change "['text']" by ".cget("text")" 
             return
         if 0 <= index < len(self.buttons):
             self.buttons[index].config(text=self.wich_text(index))
